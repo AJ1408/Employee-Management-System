@@ -11,12 +11,44 @@
 <body>
 <div th:fragment ="content">
 <div class="container">
-    <h1>Employee Management System</h1>
-    <p>Welcome to the Employee Management System. Use the links below to manage employees.</p>
+    <div class="card text-center ">
+        <div class="card-header fs-5">
+            Employee Details
+        </div>
+        <div class="card-body">
+            <table class="table table.striped">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Action</th>
 
-    <div class="nav-links">
-        <a href="/save">Add New Employee</a>
-        <a href="/edit">Edit Employee</a>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="e:${empList}">
+                    <th scope="row">[[${e.id}]]</th>
+                    <td>[[${e.name}]]</td>
+                    <td>[[${e.email}]]</td>
+                    <td>[[${e.address}]]</td>
+                    <td>[[${e.gender}]]</td>
+                    <td>
+                        <a th:href="@{/edit/{id}(id=${e.id})}" class="btn btn-sm btn-primary">Edit</a>
+                        <a th:href="@{/deleteEmp/{id}(id=${e.id})}" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div th:if="${param.success}">
+        <script>
+            alert("Updated successfully!");
+        </script>
     </div>
 </div>
 </div>
