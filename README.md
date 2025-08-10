@@ -24,6 +24,17 @@ This project demonstrates **CRUD (Create, Read, Update, Delete)** operations wit
 - **Build Tool:** Maven
 - **IDE:** IntelliJ IDEA / Eclipse
 
+#home page
+<img width="1917" height="652" alt="image" src="https://github.com/user-attachments/assets/a8be2a0f-6e5c-4292-9469-29c1c60237b6" />
+
+#add employee page 
+<img width="1915" height="922" alt="image" src="https://github.com/user-attachments/assets/f118d4ba-ce8f-4116-9954-c95ae23eebd5" />
+
+#edit employee
+<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/bea2f6d1-7804-4428-9e9d-94351d968e01" />
+
+
+
 ---
 
 ## 📂 Project Structure
@@ -52,7 +63,12 @@ Make sure you have installed:
 - **Maven**
 - **PostgreSQL**
 - **Git**
-
+  
+#configure database
+spring.datasource.url=jdbc:PostgreSql://localhost:3306/employee_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
 ---
 
 #configure database
@@ -72,16 +88,6 @@ mvn spring-boot:run
 
 Access the App 
 http://localhost:8080
-
-#home page
-<img width="1917" height="652" alt="image" src="https://github.com/user-attachments/assets/a8be2a0f-6e5c-4292-9469-29c1c60237b6" />
-
-#add employee page 
-<img width="1915" height="922" alt="image" src="https://github.com/user-attachments/assets/f118d4ba-ce8f-4116-9954-c95ae23eebd5" />
-
-#edit employee
-<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/bea2f6d1-7804-4428-9e9d-94351d968e01" />
-
 
 
 
