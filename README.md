@@ -18,11 +18,11 @@ This project demonstrates **CRUD (Create, Read, Update, Delete)** operations wit
 ---
 
 ## 🛠️ Tech Stack
-- **Backend:** Java, Spring Boot, Spring MVC, Spring JDBC / Hibernate
-- **Frontend:** HTML, CSS, JSP
-- **Database:** MySQL / PostgreSQL
+- **Backend:** Java, Spring Boot, Spring MVC,  Hibernate , Thymeleaf , lombok
+- **Frontend:** HTML, CSS 
+- **Database:** PostgreSQL
 - **Build Tool:** Maven
-- **IDE:** IntelliJ IDEA / Eclipse
+- **IDE:** IntelliJ IDEA 
 
 #home page
 <img width="1917" height="652" alt="image" src="https://github.com/user-attachments/assets/a8be2a0f-6e5c-4292-9469-29c1c60237b6" />
